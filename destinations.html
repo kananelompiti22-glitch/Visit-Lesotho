@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations | Visit Lesotho</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0E6E45;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.jpeg" alt="Visit Lesotho" height="40" class="d-inline-block align-text-top me-2">
+                <div class="d-inline-block">
+                    Visit Lesotho<br>
+                    <small style="font-size: 0.7rem; color: #d0d0d0;">Kingdom in the Sky</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="pt-5">
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="display-4">Places You'll Love 💫</h1>
+                <p class="lead text-muted">Explore the most beautiful spots in the Kingdom</p>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-12 col-md-8 offset-md-2">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        <input type="text" id="searchInput" class="form-control" placeholder="Search for a destination...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4" id="destinationsList">
+                <div class="col-md-6 col-lg-4 destination-card" data-name="sani pass">
+                    <div class="card h-100 destination-card-inner">
+                        <img src="images/sanipass.jpg" class="card-img-top" alt="Sani Pass">
+                        <div class="card-body">
+                            <h5 class="card-title">⛰️ Sani Pass</h5>
+                            <p class="card-text">The legendary mountain pass reaching 2,876m. Breathtaking views and an unforgettable drive!</p>
+                            <p class="text-muted small"><i class="fas fa-map-pin"></i> Eastern Lesotho Border</p>
+                            <button class="btn btn-primary w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modal1">
+                                Learn More <i class="fas fa-arrow-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 destination-card" data-name="thabana ntlenyana">
+                    <div class="card h-100 destination-card-inner">
+                        <img src="images/thabana.jpg" class="card-img-top" alt="Thabana Ntlenyana">
+                        <div class="card-body">
+                            <h5 class="card-title">🏔️ Thabana Ntlenyana</h5>
+                            <p class="card-text">The highest peak in Southern Africa at 3,482m. Stand on top of the world!</p>
+                            <p class="text-muted small"><i class="fas fa-map-pin"></i> Thaba-Tseka District</p>
+                            <button class="btn btn-primary w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modal2">
+                                Learn More <i class="fas fa-arrow-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 destination-card" data-name="katse dam">
+                    <div class="card h-100 destination-card-inner">
+                        <img src="images/katse.jpg" class="card-img-top" alt="Katse Dam">
+                        <div class="card-body">
+                            <h5 class="card-title">💧 Katse Dam</h5>
+                            <p class="card-text">Crystal blue waters surrounded by mountains. Fishing, boating and pure relaxation!</p>
+                            <p class="text-muted small"><i class="fas fa-map-pin"></i> Butha-Buthe District</p>
+                            <button class="btn btn-primary w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modal3">
+                                Learn More <i class="fas fa-arrow-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 destination-card" data-name="maletsunyane falls">
+                    <div class="card h-100 destination-card-inner">
+                        <img src="images/falls.jpg" class="card-img-top" alt="Maletsunyane Falls">
+                        <div class="card-body">
+                            <h5 class="card-title">🌊 Maletsunyane Falls</h5>
+                            <p class="card-text">One of the highest single-drop waterfalls in Africa — 192m high. Simply spectacular!</p>
+                            <p class="text-muted small"><i class="fas fa-map-pin"></i> Semonkong Village</p>
+                            <button class="btn btn-primary w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modal4">
+                                Learn More <i class="fas fa-arrow-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 destination-card" data-name="sehlabathebe national park">
+                    <div class="card h-100 destination-card-inner">
+                        <img src="images/park.jpg" class="card-img-top" alt="Sehlabathebe National Park">
+                        <div class="card-body">
+                            <h5 class="card-title">🦌 Sehlabathebe Park</h5>
+                            <p class="card-text">Lesotho's first national park — golden grasslands, wild flowers and wildlife.</p>
+                            <p class="text-muted small"><i class="fas fa-map-pin"></i> Qacha's Nek District</p>
+                            <button class="btn btn-primary w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modal5">
+                                Learn More <i class="fas fa-arrow-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 destination-card" data-name="tshehlanyane nature reserve">
+                    <div class="card h-100 destination-card-inner">
+                        <img src="images/reserve.jpg" class="card-img-top" alt="Tshehlanyane Nature Reserve">
+                        <div class="card-body">
+                            <h5 class="card-title">🌲 Tshehlanyane Reserve</h5>
+                            <p class="card-text">Largest protected indigenous forest. Hiking trails and beautiful lodges await you.</p>
+                            <p class="text-muted small"><i class="fas fa-map-pin"></i> Butha-Buthe District</p>
+                            <button class="btn btn-primary w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modal6">
+                                Learn More <i class="fas fa-arrow-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div class="modal fade" id="modal1" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title"><i class="fas fa-mountain"></i> Sani Pass</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Sani Pass</strong> reaches an altitude of 2,876 meters. It's one of Africa's most spectacular mountain passes!</p>
+                <p>🚗 <strong>Best experienced with a 4x4 vehicle</strong> — the winding road offers breathtaking views at every turn.</p>
+                <p>At the very top, you'll find the highest pub in Africa — a perfect place to rest and enjoy the scenery! 🍺</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal2" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title"><i class="fas fa-chevron-up"></i> Thabana Ntlenyana</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Thabana Ntlenyana</strong> means "Little Beautiful Mountain" in Sesotho. Standing at 3,482m, it's the highest point in Southern Africa!</p>
+                <p>🥾 It's a popular multi-day hike. The summit rewards you with panoramic views stretching into South Africa and over the Lesotho highlands.</p>
+                <p>💡 Tip: Go with a guide — the scenery is stunning but the weather changes fast!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal3" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title"><i class="fas fa-water"></i> Katse Dam</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Katse Dam</strong> is the second-highest dam in Africa. The blue water against the mountains looks like a painting!</p>
+                <p>🎣 <strong>Activities:</strong> Fishing, boat cruises, scenic drives and photography. The sunset here is unforgettable. 🌅</p>
+                <p>It's also part of the Lesotho Highlands Water Project — truly an engineering marvel!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal4" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title"><i class="fas fa-water"></i> Maletsunyane Falls</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Maletsunyane Falls</strong> drops an incredible 192 meters in a single leap — one of Africa's most impressive waterfalls!</p>
+                <p>💦 The mist can be seen from far away. The sound is powerful and majestic — just like Lesotho itself.</p>
+                <p>📍 Near the village of <strong>Semonkong</strong> — meaning "Place of Smoke" — named after the falls! 🏡</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal5" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title"><i class="fas fa-tree"></i> Sehlabathebe National Park</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Sehlabathebe</strong> is Lesotho's very first national park — a UNESCO World Heritage Site candidate!</p>
+                <p>🦅 Home to beautiful wild flowers, wetlands, birds and even the rare bearded vulture.</p>
+                <p>Perfect for peaceful hiking. The silence here is beautiful — just you and nature. 🌿</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal6" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title"><i class="fas fa-leaf"></i> Tshehlanyane Nature Reserve</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Tshehlanyane</strong> means "Place of Peace" — and that's exactly what you'll find here. 🍃</p>
+                <p>🌲 The largest protected indigenous forest in Lesotho. Pine trees, mountain streams and fresh air everywhere!</p>
+                <p>Great hiking trails, horse riding, and comfortable lodges make this perfect for a weekend escape. 🏡</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <img src="images/logo.jpeg" alt="Visit Lesotho" style="height: 60px; margin-bottom: 10px;">
+         <p class="mb-2 fs-5"><strong>Visit Lesotho</strong></p>
+         <p class="small text-warning fst-italic">"Kingdom in the Sky"</p>
+        <p class="small text-warning fst-italic">Where every mountain tells a story ❤️</p>
+        <div class="social-icons mb-3">
+            <a href="#" class="text-white me-2"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+        </div>
+        <p class="small">&copy; 2026 Lesotho Tourism. All Rights Reserved.</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

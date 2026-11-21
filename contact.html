@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Book | Visit Lesotho</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0E6E45;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.jpeg" alt="Visit Lesotho" height="40" class="d-inline-block align-text-top me-2">
+                <div class="d-inline-block">
+                    Visit Lesotho<br>
+                    <small style="font-size: 0.7rem; color: #d0d0d0;">Kingdom in the Sky</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="pt-5">
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="display-4">Let's Plan Your Trip ✈️</h1>
+                <p class="lead text-muted">We'd love to help you explore our beautiful Kingdom!</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5 mb-5">
+                    <h3 class="mb-4">📍 Get In Touch</h3>
+                    
+                    <div class="contact-info mb-4">
+                        <p><i class="fas fa-map-marker-alt fa-lg text-primary me-3"></i> Kingsway Road, Maseru 100, Lesotho</p>
+                        <p><i class="fas fa-phone fa-lg text-primary me-3"></i> +266 2231 2345</p>
+                        <p><i class="fas fa-envelope fa-lg text-primary me-3"></i> info@visitlesotho.ls</p>
+                        <p><i class="fas fa-clock fa-lg text-primary me-3"></i> Mon–Fri: 8:00 AM – 5:00 PM</p>
+                    </div>
+
+                    <div class="card bg-light p-4 mb-4">
+                        <h5>💡 Quick Travel Tip</h5>
+                        <p class="mb-0">The best time to visit Lesotho is between <strong>December and March</strong> — warm sunny days and green mountains! 🌞</p>
+                    </div>
+
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="btn btn-dark me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-dark me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-dark me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-dark"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <ul class="nav nav-tabs mb-4" id="contactTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#messageTab">Send Message</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#bookingTab">Book a Tour</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="messageTab">
+                            <form id="contactForm" class="p-3 border rounded bg-light">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Full Name *</label>
+                                    <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                                    <span id="nameError" class="text-danger small"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Email Address *</label>
+                                    <input type="email" id="email" class="form-control" placeholder="your@email.com" required>
+                                    <span id="emailError" class="text-danger small"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Phone Number</label>
+                                    <input type="tel" id="phone" class="form-control" placeholder="+266 58XX XXX">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Your Message *</label>
+                                    <textarea id="message" class="form-control" rows="4" placeholder="How can we help you?" required></textarea>
+                                    <span id="messageError" class="text-danger small"></span>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="fas fa-paper-plane me-2"></i> Send Message
+                                </button>
+                                <div id="contactSuccess" class="alert alert-success mt-3 d-none">
+                                    ✅ Thank you! Your message has been sent. We'll reply soon!
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="tab-pane fade" id="bookingTab">
+                            <form id="bookingForm" class="p-3 border rounded bg-light">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Your Full Name *</label>
+                                    <input type="text" id="bname" class="form-control" placeholder="Full name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Email Address *</label>
+                                    <input type="email" id="bemail" class="form-control" placeholder="your@email.com" required>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label fw-bold">Destination *</label>
+                                        <select class="form-select" id="bdestination" required>
+                                            <option value="">-- Choose a place --</option>
+                                            <option value="Sani Pass">Sani Pass</option>
+                                            <option value="Thabana Ntlenyana">Thabana Ntlenyana</option>
+                                            <option value="Katse Dam">Katse Dam</option>
+                                            <option value="Maletsunyane Falls">Maletsunyane Falls</option>
+                                            <option value="Sehlabathebe Park">Sehlabathebe National Park</option>
+                                            <option value="Tshehlanyane Reserve">Tshehlanyane Nature Reserve</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label fw-bold">Number of People</label>
+                                        <input type="number" id="bpeople" class="form-control" min="1" value="1">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Planned Visit Date</label>
+                                    <input type="date" id="bdate" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Special Requests</label>
+                                    <textarea id="brequests" class="form-control" rows="3" placeholder="Tell us about any special needs or questions..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-success w-100">
+                                    <i class="fas fa-calendar-check me-2"></i> Submit Booking
+                                </button>
+                                <div id="bookingSuccess" class="alert alert-success mt-3 d-none">
+                                    ✅ Booking received! We'll confirm within 24 hours. Thank you!
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <img src="images/logo.jpeg" alt="Visit Lesotho" style="height: 60px; margin-bottom: 10px;">
+         <p class="mb-2 fs-5"><strong>Visit Lesotho</strong></p>
+         <p class="small text-warning fst-italic">"Kingdom in the Sky"</p>
+        <p class="small text-warning fst-italic">Where every mountain tells a story ❤️</p>
+        <div class="social-icons mb-3">
+            <a href="#" class="text-white me-2"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+        </div>
+        <p class="small">&copy; 2026 Lesotho Tourism. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
